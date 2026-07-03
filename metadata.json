@@ -2,5 +2,7 @@
   "name": "مسابقة مبرمج السودان للأطفال",
   "description": "المنصة الرسمية للتسجيل في مسابقة مبرمج السودان للأطفال من عمر 9-14 سنة، تحتوي على استمارة تسجيل متكاملة ولوحة تحكم شاملة لإدارة المسابقة والمشاركين وتحديد مواعيد الإغلاق.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
