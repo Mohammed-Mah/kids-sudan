@@ -4,12 +4,13 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
 
+// إنشاء __dirname ليتوافق مع بيئة ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig(() => {
   return {
-    base: '/kids-sudan/', // <-- هذا هو السطر السحري الذي سيحل المشكلة
+    base: '/kids-sudan/', // إعداد المسار الصحيح لـ GitHub Pages
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
