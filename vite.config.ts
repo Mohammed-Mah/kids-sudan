@@ -4,16 +4,15 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
 
-// إنشاء __dirname ليتوافق مع بيئة ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig(() => {
   return {
+    base: '/kids-sudan/', // <-- هذا هو السطر السحري الذي سيحل المشكلة
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        // توجيه المسار بشكل صحيح إلى مجلد src
         '@': path.resolve(__dirname, './src'),
       },
     },
